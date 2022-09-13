@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char *sh = 'main.h'
+	char *sh = "-putchar"
 
 	while (*sh)
 
