@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char *sh = 'main'
+	char *sh = 'main.h'
 
 	while (*sh)
 
