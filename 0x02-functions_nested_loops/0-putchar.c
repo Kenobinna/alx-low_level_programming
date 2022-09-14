@@ -1,21 +1,18 @@
 #include "main.h"
 
 /**
- * main - Entry point without using printf and put
+ * main - Entry point
+ * Description: prints _putchar using putchar prototype
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char item[] = "-putchar";
-	int i = 0;
+	char str[] = "-putchar";
+	int ch;
 
-	while (item[i] != '\0')
-
-	{
-		_putchar(item[i]);
-		i++
-	}
+	for (ch = 0; ch < 8; ++ch)
+	_putchar(str[ch]);
 	_putchar('\n');
 
 	return (0);
