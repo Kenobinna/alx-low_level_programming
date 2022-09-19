@@ -9,11 +9,13 @@
  * Return: generated password
  */
 
+
 int main(void)
 {
 	char c;
 	int x;
 
+	
 	srand(time(0));
 	while (x <= 2645)
 	{
@@ -21,6 +23,7 @@ int main(void)
 		x += c;
 		putchar(c);
 	}
+	
 	putchar(2772 - x);
 
 	return (0);
