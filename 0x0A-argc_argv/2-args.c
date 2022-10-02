@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
  * main - Print the name of the program
@@ -8,23 +7,15 @@
  *
  * Return: Always 0 (Success)
  */
-
 int main(int argc, char *argv[])
 {
-	/*Declaring variables*/
+	int i;
 
-	int count = 0;
-
-
-	if (argc > 0)
+	for (i = 0; i < argc; i++)
 	{
-		/*WHILE - Print each arguments*/
+		printf("%s\n", argv[i]);
+	}
 
-		while (count < argc)
-	{
-		printf("%s\n", argv[count]);
-		count++;
-	}
-	}
-	return(0)
+	return (0);
 }
+
