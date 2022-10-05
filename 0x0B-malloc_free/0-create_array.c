@@ -11,20 +11,30 @@
 
 char *create_array(unsigned int size, char c)
 {
-	char *array;
+char *buffer;
+unsigned int position;
 
-	unsigned int index;
+if (size == 0)
+{
+return(NULL)
+}
 
+buffer = (char *) malloc(size * sizeof(c));
 
-	if (size == 0)
-		return (NULL);
-	array = malloc(sizeof(char) * size);
+if (buffer == 0)
+{
+return (NULL)
+}
 
-	if (array == NULL)
-		return (NULL);
+else
+{
+position = 0;
+}
+while (position < size)
+{
+*(buffer + position) = c;
+position++;
+}
 
-	for (index = 0; index < size; index++)
-		array[index] = c;
-
-	return (array);
+return (buffer);
 }
