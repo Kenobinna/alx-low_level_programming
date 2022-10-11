@@ -2,6 +2,23 @@
 #include "dog.h"
 
 /**
+ * _strlen - Finds the length of a string.
+ * @str: The string to be measured.
+ *
+ * Return: The length to be measured.
+ */
+
+int _strlen(char *str)
+{
+	int len = 0;
+
+	while (*str++)
+		len++;
+
+	return (len);
+}
+
+/**
  * _copy  -   Make a copy of passed in argument
  * @src:      Data to make copy of
  * Return:    Pointer
@@ -40,7 +57,7 @@ char *_copy(char *src)
  * new_dog - Create a new dog variable
  * @name: Name of the dog
  * @age: Age of the dog
- * Return: Pointer
+ * Return: Pointer to a new dog variable
  */
 
 
