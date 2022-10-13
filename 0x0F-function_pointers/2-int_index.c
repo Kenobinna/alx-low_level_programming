@@ -1,6 +1,5 @@
-#include <stdlib.h>
 #include "function_pointers.h"
-
+#include <stdio.h>
 /**
  * int_index - searches fo an integer
  * @array: array to search in
@@ -11,7 +10,7 @@
  * th cmp function does not return 0 or -1 if no match is found
  * or size is negative
  */
-int int_index(int *array, int size, int (*cmp)(int));
+int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
 
@@ -26,4 +25,3 @@ int int_index(int *array, int size, int (*cmp)(int));
 
 	return (-1);
 }
-
