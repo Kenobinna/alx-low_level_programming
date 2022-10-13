@@ -1,10 +1,10 @@
 #include <stdlib.h>
-#inclde "function_pointers.h"
+#include "function_pointers.h"
 
 /**
- * ptint_name - prjnt a name
+ * print_name - print a name
  * @name: name to print
- * @f: pointer to the printint function
+ * @f: pointer to the printing function
  */
 
 void print_name(char *name, void (*f)(char *))
