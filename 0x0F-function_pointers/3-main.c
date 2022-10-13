@@ -1,7 +1,8 @@
+#include <stdio.h>
 #include "3-calc.h"
 
 /**
- * main - program that performs simple operarions
+ * main - program that perfroms simple operations
  * @argc: number of arguments
  * @argv: array of arguments
  *
@@ -9,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int arg1, arg2, results;
+	int arg1, arg2, result;
 	char o;
 	int (*func)(int, int);
 
@@ -27,7 +28,7 @@ int main(int argc, char *argv[])
 	if (!func)
 	{
 		printf("Error\n");
-		exit(98);
+		exit(99);
 	}
 
 	o = *argv[2];
